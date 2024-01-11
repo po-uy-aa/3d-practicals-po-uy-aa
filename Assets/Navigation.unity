@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 546058321}
   - component: {fileID: 546058320}
   - component: {fileID: 546058319}
+  - component: {fileID: 546058325}
   m_Layer: 0
   m_Name: AI Agent
   m_TagString: Untagged
@@ -356,6 +357,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &546058325
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546058318}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1037442015
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +483,7 @@ GameObject:
   - component: {fileID: 1483146302}
   - component: {fileID: 1483146301}
   - component: {fileID: 1483146300}
+  - component: {fileID: 1483146304}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -551,6 +569,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483146304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483146299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5be86b4c7c112846a7d4185b211fbd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 10
+  Invisible: 0
+  agent: {fileID: 546058324}
 --- !u!1 &2005229532
 GameObject:
   m_ObjectHideFlags: 0
